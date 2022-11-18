@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
+    tools:context=".CommonDetails">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="361dp"
+        android:layout_height="586dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Gender"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioGender"
+                    android:layout_width="247dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="30dp">
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:text="Male"
+                        android:textColor="#ff6d6e71" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="Female"
+                        android:textColor="#ff6d6e71"
+                        android:textSize="14dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="289dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:text="weight"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Height"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Age"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtAge"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView90"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total Cholesterol Level"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtCholLevel"
+                    android:layout_width="153dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView91"
+                    android:layout_width="114dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Heart Rate"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtHearRate"
+                    android:layout_width="153dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Blood Pressure"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtBloodPressure"
+                    android:layout_width="153dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView181"
+                    android:layout_width="316dp"
+                    android:layout_height="28dp"
+                    android:layout_weight="1"
+                    android:text="Stroke"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioStroke"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="30dp">
+
+                    <RadioButton
+                        android:id="@+id/radioYesStroke"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:text="Yes"
+                        android:textColor="#ff6d6e71" />
+
+                    <RadioButton
+                        android:id="@+id/radioNoStroke"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="No"
+                        android:textColor="#ff6d6e71"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView182"
+                    android:layout_width="316dp"
+                    android:layout_height="29dp"
+                    android:layout_weight="1"
+                    android:text="Are you smoking ?"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioCurrentSmorker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="30dp">
+
+                    <RadioButton
+                        android:id="@+id/radioYesSmoking"
+                        android:layout_width="106dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:text="Yes"
+                        android:textColor="#ff6d6e71" />
+
+                    <RadioButton
+                        android:id="@+id/radioNoSmoking"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="No"
+                        android:textColor="#ff6d6e71"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/Layout100Cigarettes"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView183"
+                    android:layout_width="316dp"
+                    android:layout_height="57dp"
+                    android:layout_weight="1"
+                    android:text="Have you smorked at least 100 cigarettes in your entire life ?"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radio100Cigarettes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="30dp">
+
+                    <RadioButton
+                        android:id="@+id/radioYes100Cigarettes"
+                        android:layout_width="106dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:text="Yes"
+                        android:textColor="#ff6d6e71" />
+
+                    <RadioButton
+                        android:id="@+id/radioNo100Cigarettes"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="No"
+                        android:textColor="#ff6d6e71"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView184"
+                    android:layout_width="316dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:text="Have you been on blood pressure medication ?"
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioBPMeds"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="30dp">
+
+                    <RadioButton
+                        android:id="@+id/radioYesBPMeds"
+                        android:layout_width="106dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:text="Yes"
+                        android:textColor="#ff6d6e71" />
+
+                    <RadioButton
+                        android:id="@+id/radioNoBPMeds"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="No"
+                        android:textColor="#ff6d6e71"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView185"
+                    android:layout_width="397dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:text="Do you have serious difficulty walking or climbing stairs? "
+                    android:textColor="@color/black" />
+
+                <RadioGroup
+                    android:id="@+id/radioDifWalk"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="30dp">
+
+                    <RadioButton
+                        android:id="@+id/radioYesDifWalk"
+                        android:layout_width="69dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:text="Yes"
+                        android:textColor="#ff6d6e71" />
+
+                    <RadioButton
+                        android:id="@+id/radioNoDifWalk"
+                        android:layout_width="73dp"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="No"
+                        android:textColor="#ff6d6e71"
+                        android:textSize="14dp" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/LayoutSmokedPerDay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="242dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="The number of cigarettes that you smoked on average in one day ?"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtCigarettePerDay"
+                    android:layout_width="153dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1"
+                android:scrollbars="horizontal|vertical" />
+
+        </LinearLayout>
+
+    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="329dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:text="Please Complete th following Details"
+        android:textAlignment="center"
+        android:textColor="#426FA4"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSSubmit"
+        android:layout_width="182dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_button"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.666" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

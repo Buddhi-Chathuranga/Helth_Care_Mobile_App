@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MedicalApp</string>
+    <string name="next">Next</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+</resources>
